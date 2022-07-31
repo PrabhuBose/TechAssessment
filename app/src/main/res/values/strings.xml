@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TechnologyAssessment</string>
+
+    <string name="api_url">http://api.nytimes.com/svc/mostpopular/v2/mostviewed/</string>
+
+
+    <string name="news_list_heading">NY Times Most Popular</string>
+    <string name="news_details_heading">Article Details</string>
+    <string name="error_message">Something went wrong. \nPlease try again later!</string>
+
+    <string name="app_title">Technology \nAssessment</string>
+</resources>

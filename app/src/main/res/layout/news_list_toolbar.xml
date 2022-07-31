@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_news_list">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_1"
+            xmlns:local="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_size"
+            android:background="@color/colorPrimary"
+            android:contentInsetStart="@dimen/action_bar_content_padding"
+            android:contentInsetLeft="@dimen/action_bar_content_padding"
+            android:contentInsetEnd="@dimen/action_bar_content_padding"
+            android:contentInsetRight="@dimen/action_bar_content_padding"
+            local:contentInsetEnd="@dimen/action_bar_content_padding"
+            local:contentInsetLeft="@dimen/action_bar_content_padding"
+            local:contentInsetRight="@dimen/action_bar_content_padding"
+            local:contentInsetStart="@dimen/action_bar_content_padding"
+            local:popupTheme="@style/MainActionBar.Popup"
+            local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            tools:ignore="UnusedAttribute">
+
+            <RelativeLayout
+                android:id="@+id/menu_ion_rel"
+                android:layout_width="@dimen/profile_image_size"
+                android:layout_height="@dimen/profile_image_size"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/action_bar_padding_top_bottom"
+                android:layout_marginBottom="@dimen/action_bar_padding_top_bottom">
+
+                <ImageView
+                    android:id="@+id/menu_ion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="@dimen/image_padding"
+                    local:srcCompat="@drawable/ic_menu_icon"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/generic_text_label_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/action_bar_padding_top_bottom"
+                android:layout_marginBottom="@dimen/action_bar_padding_top_bottom"
+                android:gravity="center_vertical|center"
+                android:textAllCaps="true"
+                android:textSize="@dimen/generic_text_label_large" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+</merge>

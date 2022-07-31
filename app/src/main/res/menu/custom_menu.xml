@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/outline_search_24"
+        android:title=""
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="collapseActionView|ifRoom" />
+
+    <item
+        android:id="@+id/empty"
+        android:icon="@drawable/ic_action_overflow"
+        android:orderInCategory="101"
+        android:title=""
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/today"
+                android:title="Today"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/one_week"
+                android:title="One Week"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/one_month"
+                android:title="One Month"
+                app:showAsAction="ifRoom" />
+
+        </menu>
+
+    </item>
+</menu>
