@@ -44,7 +44,7 @@ class NewsList : AppCompatActivity() {
             try {
                 binding.errorMessage.visibility = View.GONE
                 binding.recyclerView.visibility = View.INVISIBLE
-                getMovieCrew(getArticles(days).results)
+                setArticleList(getArticles(days).results)
             } catch (e: Exception) {
                 runOnUiThread {
                     binding.progressBar.visibility = View.GONE
@@ -87,7 +87,7 @@ class NewsList : AppCompatActivity() {
 
 
     @OptIn(DelicateCoroutinesApi::class)
-    private fun getMovieCrew(results: List<Results>) {
+    private fun setArticleList(results: List<Results>) {
         GlobalScope.launch(Dispatchers.Main) {
             val linearLayoutManager = LinearLayoutManager(applicationContext)
             linearLayoutManager.orientation = LinearLayoutManager.VERTICAL
